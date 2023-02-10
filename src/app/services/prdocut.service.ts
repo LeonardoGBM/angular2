@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
@@ -9,4 +9,4 @@ export class PrdocutService {
   getProducts(){
     this.httpClient.get('https://api.escuelajs.co/api/v1/products');
   }
-}
+}*/

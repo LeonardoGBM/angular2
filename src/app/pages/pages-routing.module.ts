@@ -12,7 +12,8 @@ const routes: Routes=[
   { path: 'pages',component: PagesComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'category', component: CategoryComponent },
-  { path: 'product', component: ProductComponent }
+  { path: 'product', component: PagesComponent },
+  //{ path: 'product', component, PagesComponent}
 ];
 @NgModule({
   declarations: [],

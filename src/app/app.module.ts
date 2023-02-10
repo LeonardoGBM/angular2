@@ -25,7 +25,8 @@ import { PagesModule } from './pages/pages.module';
       AppRoutingModule,
       PagesModule,
       SharedModule,
-      AuthModule
+      AuthModule,
+      HttpClientModule
     ],
     exports:[
       AppComponent,

@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { NoFoundComponentComponent } from './no-found-component/no-found-component.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PagesRoutingModule } from './pages/pages-routing.module';
 
 
