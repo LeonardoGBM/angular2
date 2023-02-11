@@ -9,17 +9,20 @@ import { PagesComponent } from './pages.component';
 
 
 const routes: Routes=[
-  { path: 'pages',component: PagesComponent},
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'category', component: CategoryComponent },
-  { path: 'product', component: PagesComponent },
-  //{ path: 'product', component, PagesComponent}
+  { path: 'pages',component: PagesComponent,children:[
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'category', component: CategoryComponent },
+    { path: 'product', component: PagesComponent },
+    //{ path: 'product', component, PagesComponent}
+  ]
+},
+
 ];
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes),
   ],
   exports:[RouterModule],
 })
