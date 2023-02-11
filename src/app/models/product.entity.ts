@@ -1,9 +1,18 @@
 import { CategoryModel } from "./category.entity"
 export interface product{
-    id:number;
-    title:string;
-    price:string;
-    descripcion:string;
-    images:string[];
-    categoryId:CategoryModel;
+    id?:number;
+    title?:string;
+    price?:number;
+    description?:string;
+    images?:string[];
+    categoryId?:number;
+    CategoryID?:CategoryModel;
+}
+
+export interface Createproduct extends Omit <product, 'id' | 'category'>{
+    categoryId:number;
+}
+
+export interface Updateproduct extends Partial <product>{
+    categoryId?:number;
 }
